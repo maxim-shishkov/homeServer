@@ -1,0 +1,24 @@
+{{ define "verification" }}
+
+    <main class="px-3">
+        <h1>verification</h1>
+        <p class="lead"></p>
+
+        <form action="/verification/" method="GET">
+            <div class="input-group mb-3">
+                <span class="input-group-text" >Login</span>
+                <input type="text" class="form-control" placeholder="Username" id="login" name="login">
+            </div>
+
+            <div class="input-group mb-3">
+                <span class="input-group-text" >Pass</span>
+                <input type="password" class="form-control" placeholder="password" id="pass" name="pass">
+            </div>
+
+            <button class="btn btn-light">OK</button>
+        </form>
+
+    </main>
+
+    {{ template "footer" }}
+{{ end }}

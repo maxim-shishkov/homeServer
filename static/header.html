@@ -1,0 +1,44 @@
+{{ define "header"}}
+<!doctype html>
+<html lang="en" class="h-100">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.79.0">
+    <title>OFF</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/cover/">
+
+    <script src="https://www.chartjs.org/dist/2.9.4/Chart.min.js"></script>
+    <script src="https://www.chartjs.org/samples/latest/utils.js"></script>
+    <style>
+        canvas{
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+        }
+    </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="https://getbootstrap.com/docs/5.0/examples/cover/cover.css" rel="stylesheet">
+</head>
+<body class="d-flex h-100 text-center text-white bg-dark">
+
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <header class="mb-auto">
+        <div>
+            <h2 class="float-md-start mb-0">OFF</h2>
+            <nav class="nav nav-masthead justify-content-center float-md-end">
+                <a class="nav-link {{ if eq .Link 1 }} active {{ end }}" href="/">Home</a>
+                <a class="nav-link {{ if eq .Link 2 }} active {{ end }}" href="/climate/">Climate</a>
+                <a class="nav-link {{ if eq .Link 3 }} active {{ end }}" href="/contact/">Contact</a>
+                <a class="nav-link {{ if eq .Link 4 }} active {{ end }}" style="color:#d95252;" href="/verification">Config</a>
+            </nav>
+        </div>
+    </header>
+{{ end }}

@@ -1,0 +1,34 @@
+{{ define "config" }}
+
+
+    <main class="px-3">
+        <h1>config</h1>
+        <p class="lead"></p>
+
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="start">time ON</span>
+            <input type="text" class="form-control" placeholder="9" aria-describedby="basic-addon1" id="onHour">
+            <span class="input-group-text">:</span>
+            <input type="text" class="form-control" placeholder="00" aria-describedby="basic-addon1" id="onMin">
+        </div>
+
+
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="end">time OFF</span>
+            <input type="text" class="form-control" placeholder="22" aria-describedby="basic-addon1" id="offHour">
+            <span class="input-group-text">:</span>
+            <input type="text" class="form-control" placeholder="00" aria-describedby="basic-addon1" id="offMin">
+        </div>
+
+
+
+
+
+
+
+        <button type="button" class="btn btn-light">Save</button>
+
+    </main>
+
+    {{ template "footer" }}
+{{ end }}
